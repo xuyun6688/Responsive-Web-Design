@@ -1,1 +1,1 @@
-# https://yoshikonohachikou.github.io/Responsive-Web-Design/responsive web design.html
+# https://yoshikonohachikou.github.io/Responsive-Web-Design/ResponsiveWebDesign.html
