@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+	<body>
+		<style type="text/css">
+			* {padding: 0; margin: 0; list-style: none; font-family: "times new roman";}
+			a {text-decoration: none; color: #333;}
+			.clear:after{
+				display: block;
+				content: "";
+				clear: both;
+			}
+			body {
+				background: url(img/bg.png) repeat;				
+			}
+			#container {
+				width: 100%;	
+			}
+			#bgtop {
+				height: 20px;
+				background: url(img/rag.png) repeat-x;
+			}
+			#conleft {
+				float: left;
+				padding: 30px 0;
+				margin-left: 5%;
+				width: 25%;
+			}
+			#d1 {
+				width: 100%;
+				height: 284px;
+				background: url(img/logo-bg.png) no-repeat top;
+				position: relative;
+			}
+			#d2 {
+				position: absolute;
+				top: 118px;
+				width: 100%;
+				height: 67px;
+				background: url(img/logo.png) no-repeat top;
+			}
+			
+			#nav {
+				float: right;
+				width: 60%;
+				margin: 30px 3%;
+			}
+			.navbar {
+				float: left;
+				height: 90px;
+				width: 33.3%;
+				background: url(img/ornament.png) bottom no-repeat;
+			}
+			.navbar a {
+				height: 90px;
+				width: 33.3%;
+			}
+			.navbar a:hover p {
+				color: red;
+			}
+			.navbar p {
+				color: darkred;
+				text-align: center;
+			}
+			.navbar p:first-child {
+				margin-top: 10px;
+			}
+			.navbar p:last-child {
+				font-size: 18px;
+				font-weight: bold;
+			}
+			
+			#conright {
+				float: right;
+				width: 60%;
+				margin: 30px 3%;
+			}
+			#para {
+				margin-top: 20px;
+			}
+			#para h1 {
+				font-size: 28px;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+			#para p {
+				line-height: 18px;
+				text-align: justify;
+			}
+			.title {
+				height: 25px;
+				line-height: 25px;
+				font-size: 20px;
+				background: url(img/ornament.png) left;
+				margin-top: 20px;
+			}
+			.bottom {
+				height: 25px;
+				background: url(img/ornament.png) top no-repeat;
+				margin-top: 20px;
+			}
+			.title p {
+				width: 150px;
+				height: 25px;
+				line-height: 25px;
+				font-size: 20px;
+				text-align: center;
+				background: url(img/bg.png) repeat;
+				margin: 0 auto;
+			}
+			#figures {
+				margin-top: 20px;
+			}
+			#figures dl {
+				float: left;
+				width: 15%;
+				margin-right: 2%;
+			}
+			#figures dl:last-child {
+				margin-right: 0;
+			}
+			#figures dl:hover dd p {
+				color: red;
+			}
+			#figures dl img {
+				width: 100%;
+				border-radius: 5px;
+				box-shadow: 2px 2px 2px #888888;
+			}
+			#figures dd {
+				text-align: center;
+				color: darkred;
+				width: 100%;
+				margin-top: 10px;
+			}
+			#figures dd p:first-of-type {
+				font-size: 10px;
+			}
+			#figures dd p:last-of-type {
+				font-weight: bold;
+			}
+			footer {
+				margin: 20px auto;
+			}
+			footer p {
+				text-align: center;
+				font-size: 12px;
+
+			}
+			footer p span {
+				color: darkred;
+			}
+			
+			@media only screen and (max-width: 768px) {
+				#conleft {
+					float: left;
+				}
+				#container {
+					position: relative;
+				}
+				#nav {
+					width: 25%;
+					margin-left: 5%;
+					margin-right: 0;
+					position: absolute;
+					top: 364px;
+				}
+				hr {
+					display: none;
+				}
+				.navbar {
+					width: 100%;
+				}
+				#figures dl {
+					width: 30%;
+					margin-right: 5%;
+				}
+				#figures dl:nth-child(3n) {
+					margin-right: 0;
+				}
+			}
+			
+			@media only screen and (max-width: 480px) {
+				#container {
+					position: relative;
+				}
+				#conleft {
+					float: none;
+					width: 94%;
+					margin: 0 3%;
+					position: absolute;
+					top: 110px;
+				}
+				#nav {
+					float: none;
+					width: 94%;
+					margin: 0 3%;
+					position: absolute;
+					top: 20px;	
+				}
+				.navbar {
+					width: 33.3%;
+				}
+				#d1 {
+					background: none;
+					height: 67px;
+				}
+				#d2 {
+					top:0;
+				}
+				#conright {
+					float: none;
+					width: 94%;
+					margin: 0 3%;
+					position: absolute;
+					top: 230px;	
+				}
+				
+				#figures dl {
+					width: 30%;
+					margin-right: 5%;
+				}
+				#figures dl:nth-child(3n) {
+					margin-right: 0;
+				}
+			}
+		</style>
+		
+		<div id="container"  class="clear">
+			<div id="bgtop"></div>
+			
+			<div id="conleft">
+				<div id="d1"><div id="d2"></div></div>
+			</div>
+			
+			<div id="nav">
+				<hr />
+				<div class="navbar">
+					<a href="#"><p>THE</p><p>WEBLOGUE</p></a>
+				</div>
+				<div class="navbar">
+					<a href="#"><p>BACK</p><p>ISSUES</p></a>
+				</div>
+				<div class="navbar">
+					<a href="#"><p>ABOUT</p><p>OUR PAPER</p></a>
+				</div>
+			</div>
+			<div id="conright">	
+				<article>
+					<section id="para">
+						<h1>“Give me problems, give me <i>work</i>.”</h1>
+						<p>In the year 1878 I took my degree of Doctor of Medicine of the University of London, and proceeded to Netley to go through the course prescribed for surgeons in the army. Having completed my studies there, I was duly attached to the Fifth Northumberland Fusiliers as Assistant Surgeon. The regiment was stationed in India at the time, and before I could join it, the second Afghan war had broken out. On landing at Bombay, I learned that my corps had advanced through the passes, and was already deep in the enemy’s country.</p>
+					</section>
+					
+					<div class="title"><p>victors villains</p></div>
+					
+					<section id="figures" class="clear">
+						<dl>
+							<a href="#">
+							<dt><img src="img/f-holmes.jpg" alt="holmes" /></dt>
+							<dd><p>SHERLOCK</p><p>HOLMES</p></dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+							<dt><img src="img/f-watson.jpg" alt="watson" /></dt>
+							<dd><p>DR JOHN HEMISH</p><p>WATSON</p></dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+							<dt><img src="img/f-mycroft.jpg" alt="mycroft" /></dt>
+							<dd><p>MYCROFT</p><p>HOLMES</p></dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+							<dt><img src="img/f-moriarty.jpg" alt="moriarty" /></dt>
+							<dd><p>PROF JAMES</p><p>MORIARTY</p></dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+							<dt><img src="img/f-adler.jpg" alt="adler" /></dt>
+							<dd><p>IRENE</p><p>ADLER</p></dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+							<dt><img src="img/f-winter.jpg" alt="winter" /></dt>
+							<dd><p>JAMES</p><p>WINTER</p></dd>
+							</a>
+						</dl>
+					</section>
+					
+					<div class="bottom"></div>
+					
+				</article>
+				
+				<footer>
+					<p>Illustrations by <span>Sidney Paget</span>, words by <span>Sir Arthur Conan Doyle</span>.</p>
+					<p>What remains is by <span>Ethan Marcotte</span>.</p>
+				</footer>	
+			</div>
+		</div>
+	</body>
+</html>
